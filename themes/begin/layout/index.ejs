@@ -1,0 +1,21 @@
+<% page.posts.each(function(post){ %>
+	<div class="post">
+		<h2><a href="<%- url_for(post.path) %>"><%- post.title %></a></h2>
+		<em><%- post.date.format(config.date_format) %></em>
+		<%- post.excerpt %>
+	</div>
+	<p><a href="<%- config.root + post.path %>">Read More</a></p>
+<% }) %>
+<% if (page.total > 1) { %>
+	<p id="index-pagination">
+		<% if (page.prev == 1) { %>
+			<a href="/">Prev</a>
+		<% } else if (page.prev > 1) { %>
+			<a href="<%- config.root + page.prev_link %>">Prev</a>
+		<% } %>
+		<%- page.current %> of <%- page.total %>
+		<% if (page.next > 0) { %>
+			<a href="<%- config.root + page.next_link %>">Next</a>
+		<% } %>
+	</p>
+<% } %>

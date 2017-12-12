@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<%- css('css/bootstrap.min') %>
+	<%- css('css/style.css') %>
+	<title><%- config.title %></title>
+</head>
+<body>
+	<header class="container-fluid">
+		<a href="<%- config.root %>"><h1><%- config.title %></h1></a>
+	</header>
+	<div class="container-fluid" id="main">
+		<%- body %>
+
+	</div>
+</body>
+</html>

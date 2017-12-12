@@ -1,0 +1,6 @@
+<div class="post">
+	<h2><a href="<%- url_for(page.path) %>"><%- page.title %></a></h2>
+	<em><%- page.date.format(config.date_format) %></em>
+	<%- page.content %>
+</div>
+<p><a href="<%- config.root %>">Back to Home</a></p>

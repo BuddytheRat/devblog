@@ -1,0 +1,30 @@
+header {
+	a { 
+		display: block;
+		width: 80%;
+		max-width: 720px;
+		min-width: 500px;
+		margin: 1em auto;
+		padding-left: 15px;
+	}
+}
+
+#main {
+	width: 80%;
+	max-width: 720px;
+	min-width: 500px;
+}
+
+.post {
+	a {
+		color: black;
+	}
+
+	a:hover {
+		color: #bbb;
+	}
+}
+
+#index-pagination {
+	margin-top: 20px;
+}
